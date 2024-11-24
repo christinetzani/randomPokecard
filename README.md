@@ -5,7 +5,6 @@ A simple Pokémon card display app built with **React**, **HTML**, and **CSS**.
 ## Features
 - Displays Pokémon cards with key details.
 - Fetches data dynamically from a Pokémon API.
-- Responsive design for seamless viewing on any device.
 
 ## Installation
 1. Clone the repository:
