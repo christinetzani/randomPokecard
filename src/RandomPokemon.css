@@ -1,0 +1,67 @@
+.RandomPokemon {
+  display: flex; /* Uses flexbox to layout the children elements. */
+  /* σου επιτρέπει να γκρουπάρεις πολλά children με βάση κάποια κατεύθυνση για να μην κάνω ένα για κάθε ένα */
+  flex-direction: column; /* Arranges children in a column layout one below of the other */
+  justify-content: center;
+  /* alignment στον άξονα χ */
+  align-items: center;
+  /* alignment στον άξονα ψ */
+  min-height: 100vh; /* Sets the height of the container to 100% of the viewport height. - είναι το πίσω πίσω ελεμεντ το λευκό */
+  background-image: url(pokemon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-color: #f7f7f7; */
+}
+
+.PokemonCard {
+  background-color: white;
+  border-radius: 10px; /* Adds rounded corners to the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the card */
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.PokemonCard img {
+  width: 100%; /* Sets the width of the image to 100% of the card */
+  height: auto;
+  border-radius: 10px;
+}
+
+.PokemonCard h1 {
+  font-size: 1.5em; /* Sets the font size to 1.5 times the default size. */
+  margin-bottom: 10px;
+}
+
+.PokemonDetails {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.PokemonDetails p {
+  margin: 5px 0; /* Adds κάθετο spacing between paragraphs and removes horizontal margin. */
+}
+
+.NextButton {
+  padding: 10px 20px;
+  /* 10px top&bottom, 20px left&right */
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s;
+}
+
+.NextButton:hover {
+  background-color: #0056b3; /* Changes the background color on hover */
+  color: white;
+}
+
+.loading {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
