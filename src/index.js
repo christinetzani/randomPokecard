@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // this code sets up the entry point for your React application
 // it finds the root HTML element on the page,
 // and renders the App component within that element, wrapped in StrictMode for additional checks.
@@ -24,6 +25,18 @@ root.render(
   <StrictMode>
     {" "}
     {/* wraps the App component in StrictMode for additional checks */}
+=======
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+>>>>>>> 50417771877e498e51bd1b4063db66815960e7bc
     <App />
   </StrictMode>
 );
